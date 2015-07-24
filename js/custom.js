@@ -12,16 +12,14 @@
 //         });
 // }
 $(function() {
+  var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+
   $('img.circle').on('mouseenter', function() {
-    $('img.circle').addClass('animated pulse1').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
-    function() {
+    $(this).addClass('animated pulse1').on('mouseleave', function() {
       $(this).removeClass('animated pulse1');
-    });
-  });
-  $('img.circle').on('mouseleave', function() {
-    $('img.circle').addClass('animated pulse2').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
-    function() {
-      $(this).removeClass('animated pulse2');
+      $(this).addClass('animated pulse2').one(animationEnd,function() {
+        $(this).removeClass('animated pulse2');
+      });
     });
   });
 });
