@@ -1,22 +1,11 @@
 .circle {
-  height:180px;
-  width:180px;
+  height:50%;
+  width:50%;
   border: 3px solid white;
-  overflow: hidden;
-  padding: 10px;
+  overflow: visible;
+  padding: 5px;
 }
 
-.waves-circle {
-  width:189px !important;
-  height:189px !important;
-}
-.overflow {
-  width: 192px;
-  height: 192px;
-  border-radius: 50%;
-  padding-top: 5.5px !important;
-  overflow:hidden;
-}
 .pulse1 {
   animation: pulse2 .3s;
   -webkit-animation: pulse2 .3s;
