@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="css/custom.css" type="text/css">
   <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
 </head>
-<body style="background-color:rgb(129,185,195)">
+<body style="background-color:rgb(68,108,179)">
   <section role="head">
     <div class="row">
       <div class="center">
@@ -29,9 +29,22 @@
     <div class="row center">
         <div class="col s8 offset-s2">
           <div class="col s4">
+            <a href="#!" class="" onclick="Materialize.showStaggeredList('#staggered-test')">
               <img src="img/man.png" alt="" class="circle"/>
-            <br>
-            About
+              </a>
+              <br>
+              About
+              <ul id="staggered-test">
+                    <li class="" style="transform: translateX(0px); opacity: 0;">
+                      <h4><a href="#">List Item</a></h4>
+                      <p>This is a description</p>
+                    </li>
+                    <li class="" style="transform: translateX(0px); opacity: 0;">
+                      <h4><a href="#">List Item</a></h4>
+                      <p>This is a description</p>
+                    </li>
+              </ul>
+
           </div>
           <div class="col s4">
               <img src="img/projects.png" alt="" class="circle"/>
