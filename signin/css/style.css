@@ -5,14 +5,16 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
-.head {
-
-}
 @font-face {
     font-family: "Asap";
     src: url(../fonts/Asap-Regular.otf) format("truetype");
 }
-p.asap { 
+.head {
+  color: white;
+  font-size: 48px;
+  font-family: "Asap";
+}
+p.asap {
     font-family: "Asap";
 }
 .bgvid {
