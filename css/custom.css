@@ -1,0 +1,69 @@
+.circle {
+  height:50%;
+  width:50%;
+  border: 3px solid white;
+  overflow: visible;
+  padding: 5px;
+}
+
+.pulse1 {
+  animation: pulse2 .3s;
+  -webkit-animation: pulse2 .3s;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-name: pulse1;
+  animation-name: pulse1;
+}
+@keyframes pulse1 {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  100% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+}
+@-webkit-keyframes pulse1 {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  100% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+}
+
+.pulse2 {
+  animation: pulse2 .3s;
+  -webkit-animation: pulse2 .3s;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-name: pulse2;
+  animation-name: pulse2;
+}
+@keyframes pulse2 {
+  0% {
+    -webkit-transform: scale3d(1.05,1.05,1.05);
+    transform: scale3d(1.05,1.05,1.05);
+  }
+
+  100% {
+    -webkit-transform: scale3d(1,1,1);
+    transform: scale3d(1,1,1);
+  }
+}
+@-webkit-keyframes pulse2 {
+  0% {
+    -webkit-transform: scale3d(1.05,1.05,1.05);
+    transform: scale3d(1.05,1.05,1.05);
+  }
+
+  100% {
+    -webkit-transform: scale3d(1,1,1);
+    transform: scale3d(1,1,1);
+  }
+}
