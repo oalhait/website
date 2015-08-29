@@ -17,9 +17,21 @@ $(function() {
   $('img.circle').on('mouseenter', function() {
     $(this).addClass('animated pulse1').on('mouseleave', function() {
       $(this).removeClass('animated pulse1');
-      $(this).addClass('animated pulse2').one(animationEnd,function() {
+      $(this).addClass('animated pulse2').on(animationEnd,function() {
         $(this).removeClass('animated pulse2');
       });
     });
   });
+  $('img.circle').click(function() {
+    if($('body').hasClass('gray')) {
+        $('body').addClass('changecolorshome').removeClass('changecolors').removeClass('gray');
+        setTimeout(function() {
+          $('body').removeClass('changecolorshome');
+        }, 1000);
+
+    }
+    else {
+      $('body').addClass('changecolors').addClass('gray');
+    }
+    });
 });
