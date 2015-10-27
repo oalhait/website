@@ -28,8 +28,10 @@ $(function() {
         setTimeout(function() {
           $('body').removeClass('changecolorshome');
         }, 1000);
-
     }
+    // if ($('body').hasClass('')) {
+    //
+    // }
     else {
       $('body').addClass('changecolors').addClass('gray');
     }
