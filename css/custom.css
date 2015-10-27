@@ -1,5 +1,9 @@
 body {
-  background-color: rgb(68,108,179);
+  background-color: #2B353D;
+  color:white;
+}
+.dropdownlist {
+  animation-direction: alternate;
 }
 .circle {
   height:50%;
@@ -29,12 +33,12 @@ body {
     background-color:gray;
   }
   100% {
-    background-color: rgb(68,108,179);
+    background-color:  #2B353D;
   }
 }
 @keyframes changecolors {
   0% {
-    background-color: rgb(68,108,179);
+    background-color:  #2B353D;
   }
   100% {
     background-color: gray;
