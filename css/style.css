@@ -7,6 +7,112 @@ p {
   line-height: 2rem;
 }
 
+@font-face {
+  font-family: SourceSansLight;
+  src:url(SourceSansPro-ExtraLight.otf);
+}
+
+body {
+  background-color: #2B353D;
+  color:white;
+}
+a {
+  z-index: 100;
+}
+.about {
+  /*100vh fills screen regardless of the screen size*/
+  height:100vh;
+  background-image: url(../img/sf.jpg);
+  background-size:cover;
+  z-index: -2;
+}
+
+.titlecontainer  {
+  padding-top: 16vh;
+  padding-left: 10vh;
+  width: 28%;
+}
+.icon {
+  width: 3.5%;
+  padding-left: 1%;
+  padding-right: 1%
+}
+.sectiontitle {
+  font-size: 70px;
+  font-color:white;
+  font-family: SourceSansLight;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.dropdownlist {
+  animation-direction: alternate;
+}
+.particles {
+  padding-bottom:15px;
+  z-index:-4;
+}
+.titlepage {
+  height: 100vh;
+}
+.link {
+  color: white;
+  font-size: 18px;
+  font-family: SourceSansPro-ExtraLight;
+  z-index: 10;
+}
+.circle {
+  height:50%;
+  width:50%;
+  border: 3px solid white;
+  overflow: visible;
+  padding: 5px;
+}
+.logo {
+  padding-top: 15%;
+  max-width:20%;
+  padding-bottom:1%;
+}
+.centered {
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+.gray {
+  background-color: gray !important;
+}
+.fillpage {
+  height:100vh;
+}
+.pulse1 {
+  animation: pulse1 .3s;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-name: pulse1;
+  animation-name: pulse1;
+}
+.changecolors {
+  animation: changecolors 1s;
+}
+.changecolorshome {
+  animation: changecolorshome 1s;
+}
+@keyframes changecolorshome {
+  0% {
+    background-color:gray;
+  }
+  100% {
+    background-color:  #2B353D;
+  }
+}
+@keyframes changecolors {
+  0% {
+    background-color:  #2B353D;
+  }
+  100% {
+    background-color: gray;
+  }
+}
+
 .button-collapse {
   color: #26a69a;
 }
