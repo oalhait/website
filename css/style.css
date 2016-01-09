@@ -14,7 +14,7 @@ p {
 
 @font-face {
   font-family: SourceSansLight;
-  src:url(SourceSansPro-ExtraLight.otf);
+  src:url(../font/SourceSansPro-ExtraLight.otf);
 }
 .darkborder {
   border-color: rgb(43,53,61) !important;
@@ -86,7 +86,7 @@ a {
 .link {
   color: white;
   font-size: 18px;
-  font-family: SourceSansPro-ExtraLight;
+  font-family: SourceSansLight;
   z-index: 10;
 }
 .circle {
