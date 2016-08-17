@@ -1,24 +1,45 @@
-nav ul a,
-nav .brand-logo {
-  color: #444;
-}
 
 p {
   line-height: 2rem;
 }
-.content-holder {
-  background-color: rgba(255,255,255,0.8);
-  padding-bottom: 2%;
-  padding-top:2%
+@keyframes goUp {
+  from {
+    font-size:18px;
+    bottom:0;
+  }
+  to {
+    font-size:40px;
+    bottom:70px;
+  }
+}
+@keyframes goDown {
+  from {
+    font-size:40px;
+    bottom:70px;
+  }
+  to {
+    font-size:18px;
+    bottom:0;
+  }
+}
+.isTitle {
+  animation-name:goUp;
+  animation-duration:0.25s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+.notTitle {
+  animation-name:goDown;
+  animation-duration:0.25s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
 }
 
 @font-face {
   font-family: SourceSansLight;
-  src:url(../font/SourceSansPro-ExtraLight.otf);
+  src:url(../fonts/SourceSansPro-ExtraLight.otf);
 }
-.darkborder {
-  border-color: rgb(43,53,61) !important;
-}
+
 .project-pane {
   width: 100%;
   padding: 0px 0px 0px 0px !important;
@@ -38,18 +59,21 @@ p {
   margin:auto;
   width:100%;
 }
-body {
-  background-color: #2B353D;
-  color:white;
+.title {
+  margin: 0px;
+  font-size: 40px;
+  color: rgb(0,95,175);
+  font-family: SourceSansLight;
 }
-a {
-  z-index: 100;
+body {
+  background-color: rgb(238,238,238);
 }
 .body-text {
-  color: rgb(43,53,61);
+  color: rgb(0,95,175);
+  font-size: 16px;
+  font-family: Roboto-Light;
 }
 .about {
-  /*100vh fills screen regardless of the screen size*/
   height:100vh;
   background-image: url(../img/sf.jpg);
   background-size:cover;
@@ -68,7 +92,7 @@ a {
 }
 .sectiontitle {
   font-size: 4.5vw;
-  color: rgb(43,53,61);
+  color: rgb(0,95,175);
   font-family: SourceSansLight;
   z-index: 10;
   background-color: rgba(255,255,255, 0.8);
@@ -76,15 +100,11 @@ a {
 .dropdownlist {
   animation-direction: alternate;
 }
-.particles {
-  padding-bottom:15px;
-  z-index:-4;
-}
 .titlepage {
   height: 100vh;
 }
 .link {
-  color: white;
+  color: rgb(0,95,175);
   font-size: 18px;
   font-family: SourceSansLight;
   z-index: 10;
@@ -92,93 +112,32 @@ a {
 .circle {
   height:50%;
   width:50%;
-  border: 3px solid white;
+  border: 2px solid white;
   overflow: visible;
+  border-color: rgb(0,95,175);
 }
-.logo {
-  padding-top: 15%;
-  max-width:20%;
-  padding-bottom:1%;
+body {
+  opacity:0;
+  transition: opacity 1s;
+  -webkit-transition: opacity 1s;
 }
 .centered {
   display: block;
   margin-left: auto;
   margin-right: auto
 }
-.gray {
-  background-color: gray !important;
-}
 .fillpage {
   height:100vh;
 }
-.pulse1 {
-  animation: pulse1 .3s;
-  animation-fill-mode: forwards;
-  -webkit-animation-fill-mode: forwards;
-  -webkit-animation-name: pulse1;
-  animation-name: pulse1;
-}
-.changecolors {
-  animation: changecolors 1s;
-}
-.changecolorshome {
-  animation: changecolorshome 1s;
-}
-@keyframes changecolorshome {
-  0% {
-    background-color:gray;
-  }
-  100% {
-    background-color:  #2B353D;
-  }
-}
-@keyframes changecolors {
-  0% {
-    background-color:  #2B353D;
-  }
-  100% {
-    background-color: gray;
-  }
-}
+.projects {
 
-.button-collapse {
-  color: #26a69a;
 }
+.aboutme {
 
-.parallax-container {
-  min-height: 100vh;
-  line-height: 0;
-  min-width:100vw !important;
-  height: 4000px;
-  color: rgba(255,255,255,.9);
 }
-
-#particles-js {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 50%;
+.hidden {
+  display: none;
 }
-
-
-@media only screen and (max-width : 992px) {
-  .parallax-container .section {
-    position: absolute;
-    top: 40%;
-  }
-  #index-banner .section {
-    top: 10%;
-  }
-}
-
-@media only screen and (max-width : 600px) {
-  #index-banner .section {
-    top: 0;
-  }
-}
-
 .icon-block {
   padding: 0 15px;
 }
