@@ -1,46 +1,43 @@
-
+body {
+  opacity:0;
+  background-color: rgb(238,238,238);
+  transition: opacity 1s;
+  -webkit-transition: opacity 1s;
+  margin: 0;
+}
 p {
   line-height: 2rem;
+  text-align: center;
 }
-
 h2 {
   padding-bottom: 1%;
+  text-align: center;
+  font-weight:400;
+}
+a, a:visited {
+  text-decoration: none;
+  color: #039be5;
 }
 
-@font-face {
-  font-family: SourceSansLight;
-  src:url(../fonts/SourceSansPro-ExtraLight.otf);
-}
-
-.project-pane {
-  width: 100%;
-  padding: 0px 0px 0px 0px !important;
-}
-.pictocal {
-  width:70% !important;
-}
-.proj-image {
-  position:absolute;
-  top:0;
-  bottom:0;
-  left:0;
-  right:0;
-  margin:auto;
-  width:100%;
-}
 .title {
   margin: 0px;
   font-size: 40px;
   color: rgb(0,95,175);
   font-family: SourceSansLight;
 }
-body {
-  background-color: rgb(238,238,238);
+.valign {
+  display:flex;
+  justify-content: center;
+  width:100%;
+  height:100vh;
+}
+.content {
+  align-self: center;
 }
 .body-text {
   color: rgb(0,95,175);
   font-size: 16px;
-  font-family: Roboto-Light;
+  font-family: Roboto;
 }
 .about {
   height:100vh;
@@ -48,7 +45,10 @@ body {
   background-size:cover;
   z-index: -2;
 }
-
+@font-face {
+  font-family: SourceSansLight;
+  src:url(../fonts/SourceSansPro-ExtraLight.otf);
+}
 .titlecontainer  {
   padding-top: 16vh;
   padding-left: 10vh;
@@ -59,44 +59,27 @@ body {
   padding-left: 3vw;
   padding-right: 3vw;
 }
-.sectiontitle {
-  font-size: 4.5vw;
-  color: rgb(0,95,175);
-  font-family: SourceSansLight;
-  z-index: 10;
-  background-color: rgba(255,255,255, 0.8);
-}
+
 .dropdownlist {
   animation-direction: alternate;
 }
-.titlepage {
-  height: 100vh;
-}
-.link {
-  color: rgb(0,95,175);
-  font-size: 18px;
-  font-family: SourceSansLight;
-  z-index: 10;
-}
+
 .circle {
   height:100px;
   width:100px;
   border: 2px solid white;
+  border-radius: 50%;
   overflow: visible;
   border-color: rgb(0,95,175);
 }
-body {
-  opacity:0;
-  transition: opacity 1s;
-  -webkit-transition: opacity 1s;
+.logo-container {
+  width:50%;
+  text-align: center;
 }
 .centered {
   display: block;
   margin-left: auto;
-  margin-right: auto
-}
-.fillpage {
-  height:100vh;
+  margin-right: auto;
 }
 .hidden {
   display: none;
