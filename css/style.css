@@ -2,37 +2,9 @@
 p {
   line-height: 2rem;
 }
-@keyframes goUp {
-  from {
-    font-size:18px;
-    bottom:0;
-  }
-  to {
-    font-size:40px;
-    bottom:70px;
-  }
-}
-@keyframes goDown {
-  from {
-    font-size:40px;
-    bottom:70px;
-  }
-  to {
-    font-size:18px;
-    bottom:0;
-  }
-}
-.isTitle {
-  animation-name:goUp;
-  animation-duration:0.25s;
-  animation-timing-function: ease-in-out;
-  animation-fill-mode: forwards;
-}
-.notTitle {
-  animation-name:goDown;
-  animation-duration:0.25s;
-  animation-timing-function: ease-in-out;
-  animation-fill-mode: forwards;
+
+h2 {
+  padding-bottom: 1%;
 }
 
 @font-face {
@@ -43,9 +15,6 @@ p {
 .project-pane {
   width: 100%;
   padding: 0px 0px 0px 0px !important;
-}
-.card-pane {
-  height:20vh !important;
 }
 .pictocal {
   width:70% !important;
@@ -86,9 +55,9 @@ body {
   width: 28vw;
 }
 .icon {
-  width: 3.5%;
-  padding-left: 1%;
-  padding-right: 1%
+  height: 4vh;
+  padding-left: 3vw;
+  padding-right: 3vw;
 }
 .sectiontitle {
   font-size: 4.5vw;
@@ -110,8 +79,8 @@ body {
   z-index: 10;
 }
 .circle {
-  height:50%;
-  width:50%;
+  height:100px;
+  width:100px;
   border: 2px solid white;
   overflow: visible;
   border-color: rgb(0,95,175);
@@ -129,22 +98,6 @@ body {
 .fillpage {
   height:100vh;
 }
-.projects {
-
-}
-.aboutme {
-
-}
 .hidden {
   display: none;
-}
-.icon-block {
-  padding: 0 15px;
-}
-.icon-block .material-icons {
-  font-size: inherit;
-}
-
-footer.page-footer {
-  margin: 0;
 }
