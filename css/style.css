@@ -1,6 +1,7 @@
 body {
   opacity:0;
-  background-color: rgb(238,238,238);
+  /*background-color: rgb(241,177,15);*/
+  background-color: grey;
   transition: opacity 1s;
   -webkit-transition: opacity 1s;
   margin: 0;
@@ -14,16 +15,21 @@ h2 {
   text-align: center;
   font-weight:400;
 }
-a, a:visited {
+a {
   text-decoration: none;
-  color: #039be5;
+  color: #f5ffff;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #71848c;  
 }
 
 .title {
   margin: 0px;
   font-size: 40px;
-  color: rgb(0,95,175);
-  font-family: SourceSansLight;
+  color: #31393c;
+  font-family: Lehigh-Semibold;
 }
 .valign {
   display:flex;
@@ -34,10 +40,22 @@ a, a:visited {
 .content {
   align-self: center;
 }
+.maincontent {
+  padding-left:30vw;
+  width:70vw;
+  height: 200vh;
+  background-color: #fbfbf2;
+}
+.sidebar {
+  width:30vw;
+  height:100vh;
+  background-color: rgb(241,177,15);
+  position:fixed;
+}
 .body-text {
-  color: rgb(0,95,175);
-  font-size: 16px;
-  font-family: Roboto;
+  color: #31393c;
+  font-size: 20px;
+  font-family: Lehigh-Regular;
 }
 .about {
   height:100vh;
@@ -49,6 +67,15 @@ a, a:visited {
   font-family: SourceSansLight;
   src:url(../fonts/SourceSansPro-ExtraLight.otf);
 }
+@font-face {
+  font-family: Lehigh-Semibold;
+  src:url(../fonts/Lehigh-Personal-SemiBold.otf);
+}
+@font-face {
+  font-family: Lehigh-Regular;
+  src:url(../fonts/Lehigh-Personal-Regular.otf);
+}
+
 .titlecontainer  {
   padding-top: 16vh;
   padding-left: 10vh;
@@ -70,7 +97,7 @@ a, a:visited {
   border: 2px solid white;
   border-radius: 50%;
   overflow: visible;
-  border-color: rgb(0,95,175);
+  border-color: #31393c;
 }
 .logo-container {
   width:50%;
