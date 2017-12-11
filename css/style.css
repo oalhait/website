@@ -18,6 +18,14 @@ a:visited {
   color: #31393c;
 }
 
+#moveup {
+  margin-top:-30px;
+}
+.subhead {
+  font: 16px Lehigh-Semibold;
+  color: #31393c;
+  text-align: center;
+}
 .title {
   margin: 0px;
   text-align: center;
@@ -27,12 +35,12 @@ a:visited {
 }
 .pagetitle {
   width:100%;
-  height:10vh;
+  /*height:10vh;*/
   padding-top: 1vh;
 }
 .pagebody {
   width:100%;
-  height:90vh;
+  /*height:90vh;*/
 }
 .bodytext {
   font: 20px Lehigh-Regular;
@@ -63,7 +71,7 @@ a:visited {
   align-self: center;
 }
 .page {
-  height: 100vh;
+  /*height: 100vh;*/
   width: 75vw;
   padding-left: 25vw;
   background-color: #f1b10f;
@@ -165,5 +173,17 @@ a:visited {
 .hidden {
   display: none;
 }
-
+footer {
+  margin-left:25vw;
+  margin-bottom: 0px;
+  width: 75vw;
+  color: white;
+  text-align: right;
+}
+.footertext {
+  text-align: right;
+  margin-right:4vw;
+  font: 16px Lehigh-Regular;
+  color: #31393c;
+}
 

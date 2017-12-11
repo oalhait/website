@@ -12,6 +12,7 @@
   padding-top: 50px;
   background: #31393c;
   /*bottom: 20px;*/
+  overflow: visible;
 }
 
 .timeline ul li::after {
@@ -110,6 +111,32 @@ time {
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
   border-top: 20px solid #31393c;
+}
+
+.sidephoto-right {
+  transform: translate3d(200px, 0, 0);
+  position: absolute;
+  z-index: 100;
+  right: -25vw;
+  top: 30px;
+  max-height: 70%;
+  /*display: block;*/
+  visibility: hidden;
+  opacity: 0;
+  transition: all .5s ease-in-out;
+}
+
+.sidephoto-left {
+  transform: translate3d(-200px, 0, 0);
+  position: absolute;
+  z-index: 100;
+  left: -25vw;
+  top: 30px;
+  max-height: 70%;
+  /*display: block;*/
+  visibility: hidden;
+  opacity: 0;
+  transition: all .5s ease-in-out;
 }
 
 @media screen and (max-width: 900px) {
