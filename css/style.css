@@ -10,21 +10,14 @@ p {
   line-height: 2rem;
   text-align: center;
 }
-/*h2 {
-  padding-bottom: 1%;
-  text-align: center;
-  font-weight:400;
-}
-*//*a {
+a {
   text-decoration: none;
-  color: #f5ffff;
+  color: #094074;
+}
+a:visited {
+  color: #31393c;
 }
 
-a:visited {
-  text-decoration: none;
-  color: #71848c;  
-}
-*/
 .title {
   margin: 0px;
   text-align: center;
