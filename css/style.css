@@ -51,7 +51,13 @@ a:visited {
   font-family: Lehigh-Semibold;
   color: #31393c;
   font-size: 40px;
-  /*display:;*/
+}
+.subtitle {
+  font: 32px Lehigh-Bold;
+  text-align: center;
+}
+.subtext {
+  font: 24px Lehigh-Regular;
 }
 
 .valign {
