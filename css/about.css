@@ -1,0 +1,26 @@
+.interests {
+  height: 82%;
+  background-color: #fbfbf2;
+  margin: 2.5%;
+}
+.school {
+  height: 40%;
+  background-color: #32393c;
+  margin: 2.5%;
+  /*position: absolute;*/
+}
+.growingup {
+  height: 40%;
+  background-color: #decbb7;
+  margin: 2.5%;
+}
+.left {
+  width:50%;
+  height: 100%;
+  float:left;
+}
+.right{
+  width:50%;
+  height: 100%;
+  float:right;
+}
