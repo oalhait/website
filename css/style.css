@@ -10,12 +10,12 @@ p {
   line-height: 2rem;
   text-align: center;
 }
-h2 {
+/*h2 {
   padding-bottom: 1%;
   text-align: center;
   font-weight:400;
 }
-/*a {
+*//*a {
   text-decoration: none;
   color: #f5ffff;
 }
@@ -27,9 +27,31 @@ a:visited {
 */
 .title {
   margin: 0px;
+  text-align: center;
   font-size: 40px;
   color: #31393c;
+  font-family: Lehigh-Bold;
+}
+.pagetitle {
+  width:100%;
+  height:10vh;
+  padding-top: 1vh;
+}
+.pagebody {
+  width:100%;
+  height:90vh;
+}
+.bodytext {
+  font: 20px Lehigh-Regular;
+  color: #31393c;
+}
+.titletext {
+  text-align: center;
+  text-decoration: underline;
   font-family: Lehigh-Semibold;
+  color: #31393c;
+  font-size: 40px;
+  /*display:;*/
 }
 
 .valign {
@@ -41,23 +63,23 @@ a:visited {
 .content {
   align-self: center;
 }
-.maincontent {
-  padding-left:30vw;
-  width:70vw;
-  height: 200vh;
-  background-color: #fbfbf2;
+.page {
+  height: 100vh;
+  width: 75vw;
+  padding-left: 25vw;
+  background-color: #f1b10f;
 }
 
 .sidebar {
-  width:30vw;
+  width:25vw;
   height:100vh;
-  background-color: rgb(241,177,15);
+  background-color: #f1b10f;
   position:fixed;
   align-content: center;
-  border-right: solid #31393c;
+  border-right: 2px dotted #31393c;
 }
 .sidebar-item {
-  width:30vw;
+  width:25vw;
 }
 .sidebar-link {
   text-decoration: none;
@@ -71,12 +93,25 @@ a:visited {
   color:#fbfbf2;
 }
 
+.bg {
+  background: fixed, linear-gradient(to bottom, #f1b10f 50%, #31393c 55%);
+  background-blend-mode: color-burn;
+}
+
 .body-text {
   color: #31393c;
   font-size: 20px;
   font-family: Lehigh-Regular;
 }
 
+.scroll-line {
+  width: 2px;
+  background: #31393c;
+  height: 0%;
+  clear: both;
+  position: absolute;
+  margin-left: 25vw;
+}
 
 @font-face {
   font-family: SourceSansLight;
@@ -90,12 +125,20 @@ a:visited {
   font-family: Lehigh-Regular;
   src:url(../fonts/Lehigh-Personal-Regular.otf);
 }
-
+@font-face {
+  font-family: Lehigh-Bold;
+  src:url(../fonts/Lehigh-Personal-Bold.otf);
+}
+@font-face {
+  font-family: Lehigh-Light;
+  src:url(../fonts/Lehigh-Personal-Light.otf);
+}
 
 .icon {
   height: 4vh;
-  padding-left: 3vw;
-  padding-right: 3vw;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  padding-top: 1vw;
 }
 
 .dropdownlist {
@@ -111,7 +154,7 @@ a:visited {
   border-color: #31393c;
 }
 .logo-container {
-  width:30vw;
+  width:25vw;
   text-align: center;
 }
 .centered {
@@ -122,3 +165,5 @@ a:visited {
 .hidden {
   display: none;
 }
+
+
