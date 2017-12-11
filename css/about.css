@@ -1,25 +1,30 @@
-.interests {
-  height: 82%;
+.about-interests {
+  height: 82.5%;
+  width:90%;
   background-color: #fbfbf2;
-  margin: 2.5%;
-}
-.school {
-  height: 40%;
-  background-color: #32393c;
-  margin: 2.5%;
   /*position: absolute;*/
+  margin-top:3.5%;
+  margin-left:2.5%;
 }
-.growingup {
+.about-school {
   height: 40%;
-  background-color: #decbb7;
-  margin: 2.5%;
+  width:90%;
+  background-color: #32393c;
+  /*position: absolute;*/
+  margin-top:2.5%;
+  margin-bottom:2.5%;
 }
-.left {
+.about-growingup {
+  height: 40%;
+  width:90%;
+  background-color: #decbb7;
+}
+.about-left {
   width:50%;
   height: 100%;
   float:left;
 }
-.right{
+.about-right{
   width:50%;
   height: 100%;
   float:right;

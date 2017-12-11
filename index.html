@@ -11,11 +11,13 @@
   <link href="css/about.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script src="js/scroll.js"></script>
+  <script src="js/app.js"></script>
 
 </head>
 
-<body onload="document.body.style.opacity='1'">
-  <div class="sidebar">
+<!-- <body onload="document.body.style.opacity='1'"> -->
+<body>
+  <div class="sidebar" id="sidebar">
     <div class="scroll-line"></div>
     <div class="valign">
       <div class="content">
@@ -27,11 +29,11 @@
 
         <br>
 
-        <a href="" class="centered sidebar-link">About</a>
-        <a href="" class="centered sidebar-link">Projects</a>
-        <a href="" class="centered sidebar-link">Design</a>
-        <a href="" class="centered sidebar-link">Photography</a>
-        <a href="" class="centered sidebar-link">Inspiration</a>
+        <a href="#" class="centered sidebar-link" id="about-button">About</a>
+        <a href="#" class="centered sidebar-link" id="projects-button">Projects</a>
+        <a href="#" class="centered sidebar-link" id="design-button">Design</a>
+        <a href="#" class="centered sidebar-link" id="photography-button">Photography</a>
+        <a href="#" class="centered sidebar-link" id="inspiration-button">Inspiration</a>
 
         <br>
 
@@ -46,8 +48,10 @@
       </div>
     </div>
   </div>
+
+
   <div class="maincontent">
-    <div class="page">
+    <div class="page" id="about-page">
       <div class="pagetitle">
         <h2 class="titletext">About Me.</h2>
       </div>
@@ -56,23 +60,28 @@
         Hi! I'm Omar, and I'm going to change the world for the better. 
       </p>
       <div class="pagebody">
-        <div class="left">
-          <div class="interests">
+        <div class="about-left">
+          <div class="about-interests">
             
           </div>
         </div>
-        <div class="right">
-          <div class="school">
-            
+        <div class="about-right">
+          <div class="about-school">
+            <h3 class="subtitle">School</h3>
+            <ul>
+              <li>Carnegie Mellon University (2015 - 2019)</li>
+              <li>Electrical and Computer Engineering (3rd yr, major)</li>
+              <li>Design (minor)</li>
+            </ul>
           </div>
-          <div class="growingup">
+          <div class="about-growingup">
             
           </div>
         </div>
       </div>
     </div>
 
-    <div class="page">
+    <div class="page" id="projects-page">
       <div class="pagetitle">
         <h2 class="titletext">Projects.</h2>
       </div>
@@ -81,7 +90,7 @@
       </div>
     </div>
 
-    <div class="page">
+    <div class="page" id="design-page">
       <div class="pagetitle">
         <h2 class="titletext">Design.</h2>
       </div>
@@ -90,7 +99,7 @@
       </div>
     </div>
 
-    <div class="page">
+    <div class="page" id="photography-page">
       <div class="pagetitle">
         <h2 class="titletext">Photography.</h2>
       </div>
@@ -99,9 +108,9 @@
       </div>
     </div>
 
-    <div class="page">
+    <div class="page" id="inspiration-page">
       <div class="pagetitle">
-        <h2 class="titletext">About Me.</h2>
+        <h2 class="titletext">Inspiration.</h2>
       </div>
       <div>
         
@@ -109,16 +118,10 @@
     </div>
 
 
+
   </div>
   
 
-
-
-
-
-  <!--  Scripts-->
-  <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-  <script src="js/app.js"></script>
 
   </body>
 </html>
