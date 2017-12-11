@@ -43,8 +43,6 @@ $(document).on("click", "#inspiration-button", function() {
   $("#inspiration-page").fadeIn("slow");
 });
 
-
-
 $(document).ready(function() {
-  // $("#about-button").trigger("click");
+  $("#about-button").trigger("click");
 });
