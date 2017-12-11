@@ -1,38 +1,10 @@
-.about-interests {
-  height: 95%;
-  width:100%;
-  background-color: #fbfbf2;
-  /*position: absolute;*/
-  margin-top:2.5%;
-  margin-bottom:2.5%;
-  padding-left: -2.5%;
-  padding-right: -2.5%;
-  /*padding-top: 2.5%;*/
-}
-.about-school {
-  height: 45%;
-  width:100%;
-  background-color: #32393c;
-  /*position: absolute;*/
-  margin-bottom:2.5%;
-  margin-top: -4.5%;
-  margin-left: 2.5%;
-  margin-right: 2.5%;
-}
-.about-growingup {
-  height: 48%;
-  width:100%;
-  background-color: #decbb7;
-  margin-top:2.5%;
-  margin-left: 2.5%;
-  margin-right: 2.5%;
-}
 .about-left {
   width:50%;
   height: 100%;
   float:left;
 }
 .about-right{
+  background-color: #30393c;
   width:50%;
   height: 100%;
   float:right;
