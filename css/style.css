@@ -20,6 +20,9 @@ a {
 a:visited {
   color: #31393c;
 }
+li {
+  list-style-type: none;
+}
 
 #moveup {
   margin-top:-30px;
@@ -178,7 +181,6 @@ a:visited {
 }
 footer {
   left:25vw;
-  /*top:100vh - 1vh;*/
   bottom: 0;
   right: 0;
   width: 75vw;
@@ -195,4 +197,23 @@ footer {
   z-index: 10;
   right:4vw;
 }
+
+.container-gallery {
+  padding-bottom: 5px;
+  /*height:97vh;*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

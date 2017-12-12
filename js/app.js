@@ -44,11 +44,17 @@ $(document).on("click", "#inspiration-button", function() {
 });
 
 $(document).ready(function() {
-  // $("#about-button").trigger("click");
+  $('.container-gallery').gallery({
+    height: 500,
+    items: 4,
+    singleLine: true,
+    thumbHeight: 120
+  });
+  
+  $("#about-button").trigger("click");
     // require(["./lg-zoom.js", "./lg-thumbnail.js"], function(){
-  $("#photography-button").trigger("click");
-  $("#lightgallery").lightGallery({
-  }); 
-    // });
+  // $("#photography-button").trigger("click");
+  // });
 
 });
+
