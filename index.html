@@ -9,10 +9,14 @@
   <!-- CSS  -->
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/about.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/grid.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/lightgallery.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script src="js/scroll.js" type="text/javascript"></script>
   <script src="js/app.js" type="text/javascript" defer></script>
   <script src="js/timeline.js" type="text/javascript" defer></script>
+  <script src="js/lightgallery-all.min.js" type="text/javascript" defer></script>
   <!--TODO: remove following line -->
   <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 
@@ -129,7 +133,7 @@
             <div class="downarrow centered"></div>
           </ul>
         </section>
-        <p class="footertext">Note: Stickers not mine, all rights go to 
+        <p class="aboutfooter">Note: Stickers not mine, all rights go to 
           <a href="https://facebookstickers.info/tag/birdman-inc/">
             Birdman Inc.
           </a>
@@ -143,8 +147,10 @@
       <div class="pagetitle">
         <h2 class="titletext">Projects.</h2>
       </div>
-      <div class="">
+      <div class="pagebody">
         
+        
+
       </div>
     </div>
 
@@ -152,7 +158,7 @@
       <div class="pagetitle">
         <h2 class="titletext">Design.</h2>
       </div>
-      <div>
+      <div class="pagebody">
         
       </div>
     </div>
@@ -161,8 +167,31 @@
       <div class="pagetitle">
         <h2 class="titletext">Photography.</h2>
       </div>
-      <div>
-        
+      <div class="pagebody">
+        <div class="cont">
+          <div class="demo-gallery">
+            <ul id="lightgallery">
+              <li data-responsive="https://sachinchoolur.github.io/lightGallery/static/img/1-375.jpg 375, https://sachinchoolur.github.io/lightGallery/static/img/1-480.jpg 480, https://sachinchoolur.github.io/lightGallery/static/img/1.jpg 800" data-src="https://sachinchoolur.github.io/lightGallery/static/img/1-1600.jpg"
+              data-sub-html="<h4>Fading Light</h4><p>Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.</p>" data-pinterest-text="Pin it" data-tweet-text="share on twitter ">
+                <a href="">
+                  <img class="img-responsive" src="https://sachinchoolur.github.io/lightGallery/static/img/thumb-1.jpg">
+                  <div class="demo-gallery-poster">
+                    <img src="https://sachinchoolur.github.io/lightGallery/static/img/zoom.png">
+                  </div>
+                </a>
+              </li>
+              <li data-responsive="https://sachinchoolur.github.io/lightGallery/static/img/4-375.jpg 375, https://sachinchoolur.github.io/lightGallery/static/img/4-480.jpg 480, https://sachinchoolur.github.io/lightGallery/static/img/4.jpg 800" data-src="https://sachinchoolur.github.io/lightGallery/static/img/4-1600.jpg"
+              data-sub-html="<h4>Coniston Calmness</h4><p>Beautiful morning</p>" data-pinterest-text="Pin it" data-tweet-text="share on twitter ">
+                <a href="">
+                  <img class="img-responsive" src="https://sachinchoolur.github.io/lightGallery/static/img/thumb-4.jpg">
+                  <div class="demo-gallery-poster">
+                    <img src="https://sachinchoolur.github.io/lightGallery/static/img/zoom.png">
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div> 
       </div>
     </div>
 
@@ -170,7 +199,7 @@
       <div class="pagetitle">
         <h2 class="titletext">Inspiration.</h2>
       </div>
-      <div>
+      <div class="pagebody">
         
       </div>
     </div>
@@ -179,8 +208,8 @@
 
   </div>
   
+  </body>
   <footer>
     <p class="footertext">&copy; Omar Alhait 2017</p>
   </footer>
-  </body>
 </html>

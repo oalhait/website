@@ -139,6 +139,17 @@ time {
   transition: all .5s ease-in-out;
 }
 
+.aboutfooter {
+  text-align: right;
+  font: 16px Lehigh-Regular;
+  color: #31393c;
+  z-index: 10;
+  margin-right:4vw;
+  margin-bottom: 0;
+  bottom: 1vh;
+  position: relative;
+}
+
 @media screen and (max-width: 900px) {
   .timeline ul li div {
     width: 250px;

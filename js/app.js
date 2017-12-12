@@ -44,5 +44,11 @@ $(document).on("click", "#inspiration-button", function() {
 });
 
 $(document).ready(function() {
-  $("#about-button").trigger("click");
+  // $("#about-button").trigger("click");
+    // require(["./lg-zoom.js", "./lg-thumbnail.js"], function(){
+  $("#photography-button").trigger("click");
+  $("#lightgallery").lightGallery({
+  }); 
+    // });
+
 });
