@@ -215,6 +215,10 @@ footer {
   max-width: 73vw;
 }
 
+.form , .form p{
+  font-size: 18px;
+  font-family: Lehigh-Regular;
+}
 /*#projects-page {
   display: none;
 }
