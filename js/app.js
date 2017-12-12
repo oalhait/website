@@ -1,3 +1,11 @@
+var macy = Macy({
+    container: '#macy-container',
+    trueOrder: false,
+    waitForImages: false,
+    margin: 15,
+    columns: 3,
+});
+
 
 $(document).on("click", "#about-button", function() {
   $("#projects-page").hide();
@@ -36,6 +44,7 @@ $(document).on("click", "#photography-button", function() {
     setTimeout(function() {
       $("#photography-page").fadeIn("slow");
     }, 100);
+    $("#photo").css("visibility", "visible");
   });
 });
 
@@ -61,12 +70,12 @@ $(document).ready(function() {
   // $("#photography-button").trigger("click");
   // });
 
+  $("#projects-page").hide();
+  $("#design-page").hide();
+  $("#photography-page").hide();
+  // $("#inspiration-page").hide();
+  // $("#about-page").hide();
+  $("#about-page").fadeIn("slow");
+
 });
 
-var macy = Macy({
-    container: '#macy-container',
-    trueOrder: false,
-    waitForImages: false,
-    margin: 15,
-    columns: 3,
-});
