@@ -1,3 +1,4 @@
+
 $(document).on("click", "#about-button", function() {
   $("#projects-page").hide();
   $("#design-page").hide();
@@ -31,7 +32,11 @@ $(document).on("click", "#photography-button", function() {
   $("#photography-page").hide();
   $("#inspiration-page").hide();
   $("#about-page").hide();
-  $("#photography-page").fadeIn("slow");
+  $("#photography-page").waitForImages().done(function() {
+    setTimeout(function() {
+      $("#photography-page").fadeIn("slow");
+    }, 100);
+  });
 });
 
 $(document).on("click", "#inspiration-button", function() {
@@ -51,10 +56,17 @@ $(document).ready(function() {
     thumbHeight: 120
   });
   
-  $("#about-button").trigger("click");
+  // $("#about-button").trigger("click");
     // require(["./lg-zoom.js", "./lg-thumbnail.js"], function(){
   // $("#photography-button").trigger("click");
   // });
 
 });
 
+var macy = Macy({
+    container: '#macy-container',
+    trueOrder: false,
+    waitForImages: false,
+    margin: 15,
+    columns: 3,
+});

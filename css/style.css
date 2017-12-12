@@ -203,6 +203,30 @@ footer {
   /*height:97vh;*/
 }
 
+.macy img {
+  border-radius: 3%;
+  /*padding: 10px;*/
+  /*right:4vw;*/
+
+}
+.macy {
+  left: 1vw;
+  right: 1vw;
+  max-width: 73vw;
+}
+
+#projects-page {
+  display: none;
+}
+#design-page {
+  display: none;
+}
+#photography-page {
+  display: none;
+}
+#inspiration-page {
+  display: none;
+}
 
 
 
