@@ -61,6 +61,7 @@ li {
 }
 .subtitle {
   font: 32px Lehigh-Bold;
+  color: #31393c;
   text-align: center;
 }
 .subtext {
@@ -215,10 +216,11 @@ footer {
   max-width: 73vw;
 }
 
-.form , .form p{
+.form {
   font-size: 18px;
   font-family: Lehigh-Regular;
 }
+
 /*#projects-page {
   display: none;
 }
