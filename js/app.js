@@ -1,10 +1,4 @@
-var macy = Macy({
-    container: '#macy-container',
-    trueOrder: false,
-    waitForImages: false,
-    margin: 15,
-    columns: 3,
-});
+
 
 
 $(document).on("click", "#about-button", function() {
@@ -35,20 +29,25 @@ $(document).on("click", "#design-button", function() {
 });
 
 $(document).on("click", "#photography-button", function() {
+
   $("#projects-page").hide();
   $("#design-page").hide();
   $("#photography-page").hide();
   $("#inspiration-page").hide();
   $("#about-page").hide();
-  $("#photography-page").waitForImages().done(function() {
-    setTimeout(function() {
-      $("#photography-page").fadeIn("slow");
-    }, 100);
-    $("#photo").css("visibility", "visible");
-  });
+  // $("#photography-page").waitForImages().done(function() {
+  $("#photography-page").fadeIn("slow");
+  // });
 });
 
 $(document).on("click", "#inspiration-button", function() {
+  var macy = Macy({
+    container: '#macy-container',
+    trueOrder: false,
+    waitForImages: false,
+    margin: 15,
+    columns: 3,
+  });
   $("#projects-page").hide();
   $("#design-page").hide();
   $("#photography-page").hide();
@@ -59,23 +58,27 @@ $(document).on("click", "#inspiration-button", function() {
 
 $(document).ready(function() {
   $('.container-gallery').gallery({
-    height: 500,
+    height: 420,
     items: 4,
     singleLine: true,
     thumbHeight: 120
-  });
-  
+  }); 
   // $("#about-button").trigger("click");
     // require(["./lg-zoom.js", "./lg-thumbnail.js"], function(){
-  // $("#photography-button").trigger("click");
+  $("#about-button").trigger("click");
   // });
 
-  $("#projects-page").hide();
-  $("#design-page").hide();
-  $("#photography-page").hide();
+  // $("#projects-page").hide();
+  // $("#design-page").hide();
+  // $("#design-page").hide();
+
+
+  // $("#photography-page").hide();
+ 
   // $("#inspiration-page").hide();
   // $("#about-page").hide();
-  $("#about-page").fadeIn("slow");
+  // $("#about-page").fadeIn("slow");
+
 
 });
 
