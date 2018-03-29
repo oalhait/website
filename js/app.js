@@ -1,6 +1,3 @@
-
-
-
 $(document).on("click", "#about-button", function() {
   $("#projects-page").hide();
   $("#design-page").hide();
@@ -10,14 +7,14 @@ $(document).on("click", "#about-button", function() {
   $("#about-page").fadeIn("slow");
 });
 
-$(document).on("click", "#projects-button", function() {
-  $("#projects-page").hide();
-  $("#design-page").hide();
-  $("#photography-page").hide();
-  $("#inspiration-page").hide();
-  $("#about-page").hide();
-  $("#projects-page").fadeIn("slow");
-});
+// $(document).on("click", "#projects-button", function() {
+//   $("#projects-page").hide();
+//   $("#design-page").hide();
+//   $("#photography-page").hide();
+//   $("#inspiration-page").hide();
+//   $("#about-page").hide();
+//   $("#projects-page").fadeIn("slow");
+// });
 
 $(document).on("click", "#design-button", function() {
   $("#projects-page").hide();
@@ -28,17 +25,17 @@ $(document).on("click", "#design-button", function() {
   $("#design-page").fadeIn("slow");
 });
 
-$(document).on("click", "#photography-button", function() {
+// $(document).on("click", "#photography-button", function() {
 
-  $("#projects-page").hide();
-  $("#design-page").hide();
-  $("#photography-page").hide();
-  $("#inspiration-page").hide();
-  $("#about-page").hide();
-  // $("#photography-page").waitForImages().done(function() {
-  $("#photography-page").fadeIn("slow");
-  // });
-});
+//   $("#projects-page").hide();
+//   $("#design-page").hide();
+//   $("#photography-page").hide();
+//   $("#inspiration-page").hide();
+//   $("#about-page").hide();
+//   // $("#photography-page").waitForImages().done(function() {
+//   $("#photography-page").fadeIn("slow");
+//   // });
+// });
 
 $(document).on("click", "#inspiration-button", function() {
   var macy = Macy({
@@ -68,6 +65,17 @@ $(document).ready(function() {
   $("#about-button").trigger("click");
   // });
 
+  progressively.init({
+      delay: 50,
+      throttle: 300,
+      smBreakpoint: 600,
+      onLoad: function(elem) {
+        console.log(elem);
+      },
+      onLoadComplete: function() {
+        console.log('All images have finished loading!');
+      }
+    });
   // $("#projects-page").hide();
   // $("#design-page").hide();
   // $("#design-page").hide();

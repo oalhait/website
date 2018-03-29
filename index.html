@@ -10,6 +10,7 @@
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/about.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/gallery.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/progressively.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" defer></script>
   <script src="js/scroll.js" type="text/javascript" defer></script>
@@ -20,44 +21,6 @@
   <script src="js/timeline.js" type="text/javascript" defer></script>
   <!--TODO: remove following line -->
   <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
-
-  <script>function validate()
-
-    {
-    if (document.contact.firstname.value.length < 2 || document.contact.lastname.value.length < 2 )
-
-    {
-    alert("Please enter your whole name.");
-    return false;
-    }
-
-    if (document.contact.email.value.length < 6 )
-    {
-
-    alert("Please enter a valid email address.");
-    return false;
-    }
-      
-    if (document.contact.password.value.length < 6 )
-    {
-
-    alert("Please enter a valid password.");
-    return false;
-    }
-    if (document.contact.phone.value.length < 7 )
-    {
-
-    alert("Please enter your phone number.");
-    return false;
-    }
-
-    return true;
-    }
-
-
-  </script>
-
-  <!-- Script ends here and form starts here -->
 
 </head>
 
@@ -77,10 +40,10 @@
         <br>
 
         <a href="#" class="centered sidebar-link" id="about-button">About</a>
-        <a href="#" class="centered sidebar-link" id="projects-button">MellonHeads</a>
-        <a href="#" class="centered sidebar-link" id="design-button">Design</a>
-        <a href="#" class="centered sidebar-link" id="photography-button">Photography</a>
-        <a href="#" class="centered sidebar-link" id="inspiration-button">Inspiration</a>
+        <a href="https://github.com/oalhait" class="centered sidebar-link" id="projects-button">Projects</a>
+        <!-- <a href="#" class="centered sidebar-link" id="design-button">Design</a> -->
+        <a href="https://500px.com/omaralhait" class="centered sidebar-link" id="photography-button">Photography</a>
+        <!-- <a href="#" class="centered sidebar-link" id="inspiration-button">Inspiration</a> -->
 
         <br>
 
@@ -157,12 +120,12 @@
             <li class="timelineitem">
               <div>
                 <p class="bodytext">
-                  Currently, I'm wrapping up the fall semester with a plan
-                  to create two projects every week over break. Keep up with my progress
-                  on the 
-                  <a href="#" id="projects-button">
-                    <b>Projects</b>
-                  </a> page!
+                  Currently, I'm wrapping up the spring semester and 
+                  getting ready for the summer, where I'll be at Amazon.
+                  Keep an eye out for my 
+                  <a href="https://github.com/oalhait" id="">
+                    <b>Github</b>
+                  </a> page, where I'll be publishing projects periodically!
                 </p>
                 
               </div>
@@ -189,7 +152,7 @@
         </div>
       </div>
       <div class="pagebody">
-        <div>
+        <!-- <div>
           <h2 class="subtitle">If you didnt know...</h2>
           <p class="bodytext">MellonHeads is an organization on CMU's campus 
           directed towards making students familiar with hackathons.
@@ -207,13 +170,13 @@
             was and how to brainstorm for it, and the event was a smash hit! Attached
             is a video recap of the event.
           </p>
-          <iframe width="1183" height="501" src="https://www.youtube.com/embed/VF90tdG6Wtk" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen style="width: 50vw;"></iframe>
+         
         </div>
         <p class="centered subhead" style="font-size: 18px">
           ...If you're seeing this, there aren't any more updates at the moment. Stay tuned,
           we update biweekly!
         </p>
-        <br>
+        <br> -->
       </div>
     </div>
 
@@ -226,91 +189,6 @@
           <section class="footer_banner" id="contact">
           <div id="maincontent">
 
-          <table width="55%" border="0" align="center" cellpadding="5" cellspacing="5">
-
-            <form name="contact" action ="completed.html" method = "post" onSubmit = "return validate();">
-            <tr><td colspan="2" align="center" valign="top"><p align="center" class="form">Please enter credentials in fields with marked with *</p></td></tr>
-
-            <tr>
-            <td width="40%" class="form">* First Name:</td>
-            <td width="60%" class="form"><input type="text" size = "30" name = "firstname"></td>
-            </tr>
-
-            <tr>
-            <td class="form">* Last Name:</td>
-            <td class="form"><input type="text" size = "30" name="lastname"></td>
-            </tr>
-
-            <tr>
-            <td class="form">* Email Address:</td>
-            <td valign="top" class="form"><input type="text" size = "30" name="email"></td>
-            </tr>
-
-            <tr>
-            <td class="form">* Password:</td>
-            <td valign="top" class="form"><input type="text" size = "30" name="password"></td>
-            </tr>
-            
-            <tr>
-            <td class="form">Phone #:</td>
-            <td class="form"><input type="text" name="phone" maxlength="15" /></td>
-            </tr>
-            
-            <tr>
-            <td height="63" id = "topalign" class="form"><br/>Design Job Criteria:</td>
-            <td align = "left" valign = "middle" class="form"><br/>
-            <input type="radio" name = "contactchoice" value="emailcontact" /> : Graphic<br/>
-            <input type="radio" name = "contactchoice" value="phonecontact" /> : Industrial<br/>
-            </td>
-            </tr>
-            
-            <tr>
-            <td height="84" id = "topalign" class="form"><br>Needed by: </td>
-            <td align = "left" valign ="middle" class="form">
-            <br/>
-            <input type="checkbox" name = "Blue" value="Blue"/> : One Week<br/>
-            <input type="checkbox" name = "Green" value="Green" /> : Two Weeks<br/>
-            <input type="checkbox" name = "Red" value="Red" /> : One Month<br/>
-            <input type="checkbox" name = "Yellow" value="Yellow" /> : Two Months<br/>
-            <input type="checkbox" name = "Pink" value="Pink" /> : One Year<br/>
-            </td>
-            </tr>
-
-
-            <tr>
-            <td class="form"><br/>Favorite Design Styles:</td>
-            <td class="form"><br/>
-            <select name = "referral_code" size="6" multiple="3">
-            <option value="NULL">Please select favorites</option>
-            <option value = "MINIMAL">Minimalist</option>
-            <option value = "ABSTRACT">Abstract</option>
-            <option value = "PRACTICAL">Practical</option>
-            <option value = "CRADLE">Cradle-to-Cradle</option>
-            <option value = "OTHER">Other</option>
-            </select></td>
-            
-            </tr>
-            <tr>
-            <td height="5" colspan="2" align = "left" valign="top" class="form">
-            </tr>
-            
-            <tr>
-            <td height="30" colspan="2" valign="top" class="form">Please elaborate on what you'd like me to design for you. Spare no details!</td>
-            </tr>
-
-            <tr>
-            <td height="85" colspan="2" align = "left" valign="top" class="form">
-            <textarea id="comments" wrap="hard" rows="7" cols="75" align = "left"></textarea></td>
-            </tr>
-
-            <tr>
-            <td height="26" colspan="2" align="center" valign="top" class="form">
-            <input type="submit" value="Submit" name = "submit"></td>
-            </tr>
-
-            </form>
-
-            </table>
           </div>
           </section>
   <!-- Copyrights Section -->
@@ -324,17 +202,20 @@
       </div>      
       <div class="pagebody" id="photo">
         <div class="container-gallery">
-          <img src="img/photography/hooverdam.jpg">
-          <img src="img/photography/IMG_1125.jpg">
-          <img src="img/photography/IMG_3755.jpg">
+          <figure class="progressive">
+            <img class="progressive__img progressive--not-loaded" data-progressive="img/photography/hooverdam.jpg" src="img/photography/hooverdam-lowly.jpg">
+            <img class="progressive__img progressive--not-loaded" data-progressive="img/photography/IMG_1125.jpg" src="img/photography/IMG_1125-lowly.jpg">
+            <img class="progressive__img progressive--not-loaded" data-progressive="img/photography/IMG_3755.jpg" src="img/photography/IMG_3755-lowly.jpg">
 
-          <img src="img/photography/IMG_3783.jpg">
-          <img src="img/photography/IMG_6087.jpg">
-          <img src="img/photography/IMG_7700.jpg">
-          
-          <img src="img/photography/IMG_7809.jpg">
-          <img src="img/photography/IMG_7811.jpg">
-          <img src="img/photography/ny2.jpg">
+            <img class="progressive__img progressive--not-loaded" data-progressive="img/photography/IMG_3783.jpg" src="img/photography/IMG_3783-lowly.jpg">
+            <img class="progressive__img progressive--not-loaded" data-progressive="img/photography/IMG_6087.jpg" src="img/photography/IMG_6087-lowly.jpg">
+            <img class="progressive__img progressive--not-loaded" data-progressive="img/photography/IMG_7700.jpg" src="img/photography/IMG_7700-lowly.jpg">
+            
+            <img class="progressive__img progressive--not-loaded" data-progressive="img/photography/IMG_7809.jpg" src="img/photography/IMG_7809-lowly.jpg">
+            <img class="progressive__img progressive--not-loaded" data-progressive="img/photography/IMG_7811.jpg" src="img/photography/IMG_7811-lowly.jpg">
+            <img class="progressive__img progressive--not-loaded" data-progressive="img/photography/ny2.jpg" src="img/photography/ny2-lowly.jpg">           
+          </figure>
+
         </div> 
       </div>
     </div>
@@ -344,32 +225,34 @@
         <h2 class="titletext">Inspiration.</h2>
       </div>
       <div class="pagebody">
-        <div id="macy-container" class="macy">
-          <img src="img/inspiration/garnet.jpg">
-          <img src="img/inspiration/IMG_0328.jpg">
-          <img src="img/inspiration/IMG_0959.jpg">
-          <img src="img/inspiration/IMG_1329.jpg">
-          <img src="img/inspiration/IMG_1341.png">
-          <img src="img/inspiration/IMG_1343.png">
-          <img src="img/inspiration/IMG_1344.png">
-          <img src="img/inspiration/IMG_1529.jpg">
-          <img src="img/inspiration/IMG_1535.jpg">
-          <img src="img/inspiration/IMG_1635.jpg">
-          <img src="img/inspiration/IMG_1639.jpg">
-          <img src="img/inspiration/IMG_1672.jpg">
-          <img src="img/inspiration/IMG_1786.png">
-          <img src="img/inspiration/IMG_1811.png">
-          <img src="img/inspiration/IMG_2520.jpg">
-          <img src="img/inspiration/IMG_3990.jpg">
-          <img src="img/inspiration/IMG_8270.jpg">
-          <img src="img/inspiration/IMG_9235.jpg">
-          <img src="img/inspiration/IMG_9360.jpg">
-          <img src="img/inspiration/IMG_9513.jpg">
-          <img src="img/inspiration/ponyo.jpg">
-          <img src="img/inspiration/rest(auraunt).jpg">
-          <img src="img/inspiration/spirited.gif">
-          <img src="img/inspiration/wayne.png">
-        </div>
+        <!-- <figure class="progressive"> -->
+          <div id="macy-container" class="macy">
+            <img class="progressive__img progressive--not-loaded" data-progressive="img/inspiration/garnet.jpg" src="img/inspiration/garnet-lowly.jpg">
+            <img class="progressive__img progressive--not-loaded" data-progressive="img/inspiration/IMG_0328.jpg" src="img/inspiration/IMG_0328-lowly.jpg">
+            <img class="progressive__img progressive--not-loaded" data-progressive="img/inspiration/IMG_0959.jpg" src="img/inspiration/IMG_0959-lowly.jpg">
+            <img class="progressive__img progressive--not-loaded" data-progressive="img/inspiration/IMG_1329.jpg" src="img/inspiration/IMG_1329-lowly.jpg">
+            <img class="progressive__img progressive--not-loaded" data-progressive="img/inspiration/IMG_1341.png" src="img/inspiration/IMG_1341-lowly.png">
+            <img class="progressive__img progressive--not-loaded" data-progressive="img/inspiration/IMG_1343.png" src="img/inspiration/IMG_1343-lowly.png">
+            <img class="progressive__img progressive--not-loaded" data-progressive="img/inspiration/IMG_1344.png" src="img/inspiration/IMG_1344-lowly.png">
+            <img class="progressive__img progressive--not-loaded" data-progressive="img/inspiration/IMG_1529.jpg" src="img/inspiration/IMG_1529-lowly.jpg">
+            <img class="progressive__img progressive--not-loaded" data-progressive="img/inspiration/IMG_1535.jpg" src="img/inspiration/IMG_1535-lowly.jpg">
+            <img class="progressive__img progressive--not-loaded" data-progressive="img/inspiration/IMG_1635.jpg" src="img/inspiration/IMG_1635-lowly.jpg">
+            <img class="progressive__img progressive--not-loaded" data-progressive="img/inspiration/IMG_1639.jpg" src="img/inspiration/IMG_1639-lowly.jpg">
+            <img class="progressive__img progressive--not-loaded" data-progressive="img/inspiration/IMG_1672.jpg" src="img/inspiration/IMG_1672-lowly.jpg">
+            <img class="progressive__img progressive--not-loaded" data-progressive="img/inspiration/IMG_1786.png" src="img/inspiration/IMG_1786-lowly.png">
+            <img class="progressive__img progressive--not-loaded" data-progressive="img/inspiration/IMG_1811.png" src="img/inspiration/IMG_1811-lowly.png">
+            <img class="progressive__img progressive--not-loaded" data-progressive="img/inspiration/IMG_2520.jpg" src="img/inspiration/IMG_2520-lowly.jpg">
+            <img class="progressive__img progressive--not-loaded" data-progressive="img/inspiration/IMG_3990.jpg" src="img/inspiration/IMG_3990-lowly.jpg">
+            <img class="progressive__img progressive--not-loaded" data-progressive="img/inspiration/IMG_8270.jpg" src="img/inspiration/IMG_8270-lowly.jpg">
+            <img class="progressive__img progressive--not-loaded" data-progressive="img/inspiration/IMG_9235.jpg" src="img/inspiration/IMG_9235-lowly.jpg">
+            <img class="progressive__img progressive--not-loaded" data-progressive="img/inspiration/IMG_9360.jpg" src="img/inspiration/IMG_9360-lowly.jpg">
+            <img class="progressive__img progressive--not-loaded" data-progressive="img/inspiration/IMG_9513.jpg" src="img/inspiration/IMG_9513-lowly.jpg">
+            <img class="progressive__img progressive--not-loaded" data-progressive="img/inspiration/ponyo.jpg" src="img/inspiration/ponyo-lowly.jpg">
+            <img class="progressive__img progressive--not-loaded" data-progressive="img/inspiration/rest(auraunt).jpg" src="img/inspiration/rest(auraunt)-lowly.jpg">
+            <!-- <img class="progressive__img progressive--not-loaded" data-progressive="img/inspiration/spirited.gif" src="img/inspiration/spirited.gif"> -->
+            <img class="progressive__img progressive--not-loaded" data-progressive="img/inspiration/wayne.png" src="img/inspiration/wayne-lowly.png">
+          </div>
+        <!-- </figure> -->
       </div>
     </div>
 
@@ -380,5 +263,7 @@
   </body>
   <footer>
     <p class="footertext">&copy; Omar Alhait 2017</p>
+  <script src="js/progressively.min.js" type="text/javascript" defer></script>
+  <script src="js/prog.js" type="text/javascript" defer></script>
   </footer>
 </html>
