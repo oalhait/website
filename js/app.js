@@ -37,45 +37,45 @@ $(document).on("click", "#design-button", function() {
 //   // });
 // });
 
-$(document).on("click", "#inspiration-button", function() {
-  var macy = Macy({
-    container: '#macy-container',
-    trueOrder: false,
-    waitForImages: false,
-    margin: 15,
-    columns: 3,
-  });
-  $("#projects-page").hide();
-  $("#design-page").hide();
-  $("#photography-page").hide();
-  $("#inspiration-page").hide();
-  $("#about-page").hide();
-  $("#inspiration-page").fadeIn("slow");
-});
+// $(document).on("click", "#inspiration-button", function() {
+//   var macy = Macy({
+//     container: '#macy-container',
+//     trueOrder: false,
+//     waitForImages: false,
+//     margin: 15,
+//     columns: 3,
+//   });
+//   $("#projects-page").hide();
+//   $("#design-page").hide();
+//   $("#photography-page").hide();
+//   $("#inspiration-page").hide();
+//   $("#about-page").hide();
+//   $("#inspiration-page").fadeIn("slow");
+// });
 
 $(document).ready(function() {
-  $('.container-gallery').gallery({
-    height: 420,
-    items: 4,
-    singleLine: true,
-    thumbHeight: 120
-  }); 
+  // $('.container-gallery').gallery({
+  //   height: 420,
+  //   items: 4,
+  //   singleLine: true,
+  //   thumbHeight: 120
+  // }); 
   // $("#about-button").trigger("click");
     // require(["./lg-zoom.js", "./lg-thumbnail.js"], function(){
   $("#about-button").trigger("click");
   // });
 
-  progressively.init({
-      delay: 50,
-      throttle: 300,
-      smBreakpoint: 600,
-      onLoad: function(elem) {
-        console.log(elem);
-      },
-      onLoadComplete: function() {
-        console.log('All images have finished loading!');
-      }
-    });
+  // progressively.init({
+  //     delay: 50,
+  //     throttle: 300,
+  //     smBreakpoint: 600,
+  //     onLoad: function(elem) {
+  //       console.log(elem);
+  //     },
+  //     onLoadComplete: function() {
+  //       console.log('All images have finished loading!');
+  //     }
+  //   });
   // $("#projects-page").hide();
   // $("#design-page").hide();
   // $("#design-page").hide();
