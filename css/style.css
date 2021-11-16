@@ -167,6 +167,7 @@ li {
   border-radius: 50%;
   overflow: visible;
   border-color: #31393c;
+  background-size: cover;
 }
 .logo-container {
   width:25vw;
