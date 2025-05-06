@@ -8,7 +8,11 @@ interface Command {
   output: string;
 }
 
-export default function Terminal() {
+interface TerminalProps {
+  onToggleView: () => void;
+}
+
+export default function Terminal({ onToggleView }: TerminalProps) {
   const [input, setInput] = useState("");
   const [commands, setCommands] = useState<Command[]>([]);
   const [mode, setMode] = useState<"normal" | "insert">("normal");
@@ -16,9 +20,9 @@ export default function Terminal() {
   const terminalRef = useRef<HTMLDivElement>(null);
 
   const links = {
-    github: "https://github.com/omarfyi",
-    linkedin: "https://linkedin.com/in/omarfyi",
-    resume: "https://resume.omar.fyi",
+    github: "https://github.com/oalhait",
+    linkedin: "https://linkedin.com/in/oalhait",
+    resume: "https://omar.fyi/resume",
     email: "mailto:mail@omar.fyi",
   };
 
@@ -94,22 +98,32 @@ export default function Terminal() {
   };
 
   return (
-    <div className="min-h-screen bg-black text-green-500 p-4">
+    <div className="min-h-screen bg-[#212121] text-[#EEFFFF] p-4">
       <div
         ref={terminalRef}
         className="max-w-3xl mx-auto h-[calc(100vh-2rem)] overflow-y-auto"
       >
-        <div className="mb-4">
-          <h1 className="text-2xl font-bold">Hi I&apos;m Omar Alhait</h1>
-          <p className="text-sm opacity-75">
-            Type &apos;help&apos; for available commands
-          </p>
+        <div className="mb-4 flex justify-between items-center">
+          <div>
+            <h1 className="text-2xl font-bold text-[#89DDFF]">
+              Welcome to Omar&apos;s Terminal
+            </h1>
+            <p className="text-sm opacity-75">
+              Type &apos;help&apos; for available commands
+            </p>
+          </div>
+          <button
+            onClick={onToggleView}
+            className="text-[#82AAFF] hover:text-[#C3E88D] transition-colors text-sm font-mono"
+          >
+            [static view]
+          </button>
         </div>
 
         {commands.map((cmd, i) => (
           <div key={i} className="mb-2">
             <div className="flex items-center">
-              <span className="mr-2">$</span>
+              <span className="mr-2 text-[#C3E88D]">$</span>
               <span>{cmd.command}</span>
             </div>
             <div className="whitespace-pre-line ml-4">{cmd.output}</div>
@@ -117,13 +131,13 @@ export default function Terminal() {
         ))}
 
         <form onSubmit={handleSubmit} className="flex items-center">
-          <span className="mr-2">$</span>
+          <span className="mr-2 text-[#C3E88D]">$</span>
           <input
             ref={inputRef}
             type="text"
             value={input}
             onChange={(e) => setInput(e.target.value)}
-            className="bg-transparent border-none outline-none flex-1 text-green-500"
+            className="bg-transparent border-none outline-none flex-1 text-[#EEFFFF]"
             placeholder={mode === "normal" ? "Press i to insert" : ""}
             disabled={mode === "normal"}
             autoComplete="off"
@@ -131,7 +145,7 @@ export default function Terminal() {
           />
           {mode === "normal" && (
             <motion.div
-              className="w-2 h-6 bg-green-500"
+              className="w-2 h-6 bg-[#C3E88D]"
               animate={{ opacity: [0, 1, 0] }}
               transition={{ duration: 1, repeat: Infinity }}
             />
