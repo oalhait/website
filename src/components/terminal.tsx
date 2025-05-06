@@ -117,7 +117,7 @@ export default function Terminal({ onToggleView }: TerminalProps) {
         <div className="mb-4 flex justify-between items-center">
           <div>
             <h1 className="text-2xl font-bold text-[#89DDFF]">
-              Welcome to Omar&apos;s Terminal
+              Omar Alhait&apos;s website
             </h1>
             <p className="text-sm opacity-75">
               Type &apos;help&apos; for available commands
