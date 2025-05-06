@@ -19,6 +19,15 @@ export default function Terminal({ onToggleView }: TerminalProps) {
   const inputRef = useRef<HTMLInputElement>(null);
   const terminalRef = useRef<HTMLDivElement>(null);
 
+  const validCommands = [
+    "github",
+    "linkedin",
+    "resume",
+    "email",
+    "help",
+    "clear",
+  ];
+
   const links = {
     github: "https://github.com/oalhait",
     linkedin: "https://linkedin.com/in/oalhait",
@@ -97,6 +106,8 @@ export default function Terminal({ onToggleView }: TerminalProps) {
     setInput("");
   };
 
+  const isInputValidCommand = validCommands.includes(input.toLowerCase());
+
   return (
     <div className="min-h-screen bg-[#212121] text-[#EEFFFF] p-4">
       <div
@@ -124,7 +135,13 @@ export default function Terminal({ onToggleView }: TerminalProps) {
           <div key={i} className="mb-2">
             <div className="flex items-center">
               <span className="mr-2 text-[#C3E88D]">$</span>
-              <span>{cmd.command}</span>
+              <span
+                className={
+                  validCommands.includes(cmd.command) ? "text-[#C3E88D]" : ""
+                }
+              >
+                {cmd.command}
+              </span>
             </div>
             <div className="whitespace-pre-line ml-4">{cmd.output}</div>
           </div>
@@ -132,17 +149,24 @@ export default function Terminal({ onToggleView }: TerminalProps) {
 
         <form onSubmit={handleSubmit} className="flex items-center">
           <span className="mr-2 text-[#C3E88D]">$</span>
-          <input
-            ref={inputRef}
-            type="text"
-            value={input}
-            onChange={(e) => setInput(e.target.value)}
-            className="bg-transparent border-none outline-none flex-1 text-[#EEFFFF]"
-            placeholder={mode === "normal" ? "Press i to insert" : ""}
-            disabled={mode === "normal"}
-            autoComplete="off"
-            spellCheck="false"
-          />
+          <div className="relative flex-1">
+            <input
+              ref={inputRef}
+              type="text"
+              value={input}
+              onChange={(e) => setInput(e.target.value)}
+              className="bg-transparent border-none outline-none w-full text-[#EEFFFF]"
+              placeholder={mode === "normal" ? "Press i to insert" : ""}
+              disabled={mode === "normal"}
+              autoComplete="off"
+              spellCheck="false"
+            />
+            {mode === "insert" && isInputValidCommand && (
+              <div className="absolute inset-0 pointer-events-none">
+                <span className="text-[#C3E88D]">{input}</span>
+              </div>
+            )}
+          </div>
           {mode === "normal" && (
             <motion.div
               className="w-2 h-6 bg-[#C3E88D]"
