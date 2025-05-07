@@ -9,10 +9,10 @@ interface Command {
 }
 
 interface TerminalProps {
-  onToggleView: () => void;
+  onToggleView?: () => void;
 }
 
-export default function Terminal({ onToggleView }: TerminalProps) {
+export default function Terminal({}: TerminalProps) {
   const [input, setInput] = useState("");
   const [commands, setCommands] = useState<Command[]>([]);
   const [mode, setMode] = useState<"normal" | "insert">("normal");
@@ -123,12 +123,6 @@ export default function Terminal({ onToggleView }: TerminalProps) {
               Type &apos;help&apos; for available commands
             </p>
           </div>
-          <button
-            onClick={onToggleView}
-            className="text-[#82AAFF] hover:text-[#C3E88D] transition-colors text-sm font-mono"
-          >
-            [static view]
-          </button>
         </div>
 
         {commands.map((cmd, i) => (
